@@ -1,38 +1,31 @@
 * {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color:lavender
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-body {
-    background-color: white;
-}
-.header {
-    padding: 20px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #ffffff;
-    background-color:rgb(1, 26, 32);
-    
+.header{
+    background-color:white
 }
 
-.header h1 {
+h1 {
+    margin: 1%;
     display: inline-block;
-    font-size: 48px;
+     
 }
 
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;  
 }
 
 .header nav ul {
     list-style-type: none;
+
 }
 
 .header nav ul li {
@@ -40,22 +33,70 @@ body {
     margin-left: 25px;
 }
 
-.main {
-    width: 100%;
+.container {
+    background-image: url("Images/AdobeStock_370668706.jpeg");
     background-size: cover;
-    background-position: top;
+    background-position: center;
+    height: 300px;
+    width: 100%;
 }
 
-h2 {
-    
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 100px;
 }
+.linksthree{
+    text-align: center;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    background-color:white;
+    padding: 5px;
+    
+  }
+
+
+.grid-container:hover {
+    border-width: 3px;
+    text-size-adjust: 150%;
+  }
+  
+  
+  
+  .griditem {
+    background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  position:relative;
+    top:-50px;
+  }
+  
+
+ 
+  #social img {
+    opacity: 50%;
+  }
+  #social:hover img {
+    opacity:100%;
+    transform: scale(1.1);  
+  }
+
 
 p {
-   text-indent: 25%; 
+   font-size: 20px;
 }
 
-
-
+.linkstwo h2{
+    padding: 5%;
+}
+    
 
 
 
