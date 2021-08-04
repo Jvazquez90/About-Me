@@ -1,101 +1,147 @@
+/* Applies to full page */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:white
 }
 
+/* Header */
 .header{
-    background-color:white
+    background-color:white;
 }
 
 h1 {
     margin: 1%;
     display: inline-block;
-     
+    font-size: 35px;     
 }
 
+/* Navigation */
 .header nav {
-    padding-top: 15px;
+    padding-top: 28px;
     margin-right: 20px;
     float: right;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;  
+    font-size: 25px;     
 }
 
 .header nav ul {
     list-style-type: none;
-
 }
 
 .header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 25px;    
 }
 
+.header nav ul li a {
+    text-decoration: none;
+    color:steelblue;    
+}
+
+/* Main Image */
 .container {
     background-image: url("Images/AdobeStock_370668706.jpeg");
-    background-size: cover;
     background-position: center;
     height: 300px;
-    width: 100%;
+    width: 100vw;
 }
 
-
+/* Content */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 100px;
 }
-.linksthree{
-    text-align: center;
+
+p {
+    font-size: 20px;
+    text-align: center;   
 }
 
-.grid-container {
-    display:grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
-    background-color:white;
-    padding: 5px;
-    
-  }
+h2 {
+    padding: 2%;
+    text-align: center;
+    color:steelblue;
+    font-size: 30px;
+    text-decoration: underline;   
+}
 
+h3 {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.linksthree{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom:2%;    
+}
+
+.linksthree a {
+    text-decoration: none;
+}
+
+/* Project Alignment and Opacity/hover */
+.grid-container {
+    display: flex;
+    padding: 5px;
+    padding-left: 5%;   
+    width: auto;
+}
 
 .grid-container:hover {
     border-width: 3px;
-    text-size-adjust: 150%;
-  }
+    text-size-adjust: 100%;
+}
   
-  
-  
-  .griditem {
-    background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+.griditem {
+  padding:1em;
+  font-size: 18px;
+  text-align: left;
   position:relative;
-    top:-50px;
-  }
+  height: 300px;
+  width: 50%;
+}
   
-
- 
-  #social img {
+#snippet img {
     opacity: 50%;
-  }
-  #social:hover img {
+}
+
+#snippet:hover img {
     opacity:100%;
     transform: scale(1.1);  
-  }
+}
+/* Media Query */
+@media only screen and (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
 
+    }
 
-p {
-   font-size: 20px;
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .griditem {
+        width: 100vw;
+    }
+
 }
 
-.linkstwo h2{
-    padding: 5%;
-}
+
+
+
+
+
+
     
 
 

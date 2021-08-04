@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Head -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,78 +10,82 @@
 </head>
 <body>
     <header class="header">
-        <h1>Jessica Vazquez</h1>
-        <nav>
-            <ul>
-                <li>
+        <h1 id='header-name'>Jessica Vazquez</h1>
+       <!-- Navigation -->
+        <nav id='header-navlinks'>
+            <ul id='header-list'>
+                <li class='header-list-item'>
                     <a href="#About-Me" title="About Me">About Me</a>
                 </li>
-                <li>
-                    <a href="#Work" title="Work">Work</a>
+                <li class='header-list-item'>
+                    <a href="#Projects" title="Projects">Projects</a>
                 </li>
-                <li>
+                <li class='header-list-item'>
                     <a href="#Contact-Me" title="Contact Me">Contact Me</a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <main>
+        <!-- Image in the header -->
         <div class="container"></div>
-
+        <!-- About Me -->
         <section class="content"
-                <article id="About-Me" class="linkone">
-                    <h2> About Me</h2>
-                    <p style="text-indent:15%">My name is Jessica Vazquez. I am an aspiring software developer living in the</p> <p style="text-indent:15%">Philadelphia, PA area I am currently enrolled in Rutgers Coding Bootcamp.
-                    For</p><p style="text-indent:15%">the past 6 years I have worked in law enforcement. I am currently persuing a</p><p style="text-indent:15%">career change.</p>
-                    <br>
-                    <br>
-                    <br>
-                    <p style="text-align:center">Take a look at some of my current projects below!</p>
-                    <br>
-                    <br>
-                    <br>
-                </article>
+            <article id="About-Me" class="linkone">
+                <h2> About Me</h2>
+                <br>
+                <br>
+                <p>My name is Jessica Vazquez. I am an aspiring software developer living in the Philadelphia, PA area. I am currently enrolled in Rutgers Coding Bootcamp.
+                For the past 6 years I have worked in law enforcement. I am hoping to use my problem solving and analytical skills in coding.I enjoy learning new things and working with others. </p>
+                <br>
+                <br>
+                <p style="text-align:center">Take a look at some of my current projects below!</p>
+                <br>
+                <br>    
+            </article>
 
-                <article id="Work" class="linkstwo">
-                    <h2>Work</h2>
-                    <div class="grid-container">
-                        <header>
-                             <h3>Horiseon Code Refractor</h3>
-                         </header>
-                         <div class="griditem">
-                             <a href="https://jvazquez90.github.io/Code-Refractor/" alt="Snippet of Horiseon" id="social" target="_blank"><img src="Screen Shot 2021-08-02 at 11.33.43 PM.png" width="250px"></a>
-                        </div>
+            <!-- Projects -->
+            <article id="Projects" class="linkstwo">
+                <h2>Projects</h2>
+                <div class="grid-container">
+                    <div class="griditem">
+                        <h3>Horiseon Code Refractor</h3>
+                            <a href="https://jvazquez90.github.io/Code-Refractor/" alt="Horiseon Snippet" id="snippet" target="_blank">
+                                <img src="Assets/Css/Images/Screen Shot 2021-08-02 at 11.33.43 PM.png" width="250px">
+                            </a>
+                    </div>
+                    <div class="griditem">
                         <h3>Javascript Box</h3>
-                            <div class="griditem">
-                                <a href="http://127.0.0.1:5501/Javascript/index.html" alt="Javascript Box" id="social" target="_blank"><img src="Assets/Css/Images/Grow Box.png" width="250px"></a>
-                            </div>
+                            <a href="http://127.0.0.1:5501/Javascript/index.html" alt="Snippet of Javascript Box" id="snippet" target="_blank">
+                                <img src="Assets/Css/Images/Grow Box.png" width="200px">
+                            </a>
+                    </div>
+                    <div class="griditem">
                         <h3>Javascript Box</h3>
-                        <div class="griditem">
-                            <a href="http://127.0.0.1:5501/Javascript/index.html" alt="Javascript Box" id="social" target="_blank"><img src="Assets/Css/Images/Grow Box.png" width="250px"></a>
-                            </div>
+                            <a href="http://127.0.0.1:5501/Javascript/index.html" alt="Snippet of Javascript Box" id="snippet" target="_blank">
+                                <img src="Assets/Css/Images/Grow Box.png" width="200px">
+                            </a>
+                    </div>
+                    <div class="griditem">
                         <h3>Scratch Game</h3>
-                        <div class="griditem">
-                            <a href="https://scratch.mit.edu/projects/553868556" alt="Scratch Game" id="social" target="_blank"><img src="Screen Shot 2021-08-02 at 11.45.29 PM.png" width="250px"></a>
-                            </div>
-                        </div>
-                        
-
-                            
-
-                </article>
+                            <a href="https://scratch.mit.edu/projects/553868556" alt="Snippet of Scratch Game" id="snippet" target="_blank">
+                                <img src="Assets/Css/Images/Screen Shot 2021-08-02 at 11.45.29 PM.png" width="250px">
+                            </a>
+                    </div>
+                </div>
+            </article>
+            <article id="Contact-Me" class="linksthree">
+                <h2>Contact Me</h2>
+                    <a href="mailto:jessica.vazquez20@gmail.com">Email</a>
+                    <a href="https://github.com/Jvazquez90">GitHub</a>
+                    <a href="https://www.linkedin.com/in/jessicavazq30/">LinkedIn</a>
+            </article>
 
     </main>
 
-<footer>
-
-    <article id="Contact-Me" class="linksthree">
-        <h2>Contact Me</h2>
-        <a href="mailto:jessica.vazquez20@gmail.com">Email</a>
-        <a href="https://github.com/Jvazquez90">GitHub</a>
-        <a href="https://www.linkedin.com/in/jessicavazq30/">LinkedIn</a>
-        
-    </article>
-</footer>
+    <footer>
+    </footer>
 
     
 </body>
