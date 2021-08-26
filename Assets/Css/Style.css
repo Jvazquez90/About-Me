@@ -4,18 +4,21 @@
     padding: 0;
     margin: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color:white
+    background-color:white;
 }
 
 /* Header */
 .header{
     background-color:white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 h1 {
     margin: 1%;
     display: inline-block;
-    font-size: 35px;     
+    font-size: 40px;     
 }
 
 /* Navigation */
@@ -24,7 +27,7 @@ h1 {
     margin-right: 20px;
     float: right;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 25px;     
+    font-size: 30px;     
 }
 
 .header nav ul {
@@ -50,14 +53,8 @@ h1 {
 }
 
 /* Content */
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 100px;
-}
-
 p {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;   
 }
 
@@ -65,7 +62,7 @@ h2 {
     padding: 2%;
     text-align: center;
     color:steelblue;
-    font-size: 30px;
+    font-size: 35px;
     text-decoration: underline;   
 }
 
@@ -76,8 +73,11 @@ h3 {
 
 .linksthree{
     text-align: center;
-    font-size: 25px;
-    padding-bottom:2%;    
+    font-size: 25px;     
+}
+
+.linksthree h2{
+    padding:5px;
 }
 
 .linksthree a {
@@ -94,13 +94,12 @@ h3 {
 
 .grid-container:hover {
     border-width: 3px;
-    text-size-adjust: 100%;
 }
   
 .griditem {
   padding:1em;
   font-size: 18px;
-  text-align: left;
+  text-align: center;
   position:relative;
   height: 300px;
   width: 50%;
@@ -115,7 +114,7 @@ h3 {
     transform: scale(1.1);  
 }
 /* Media Query */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     .header {
         display: flex;
         flex-direction: column;
@@ -132,6 +131,7 @@ h3 {
 
     .griditem {
         width: 100vw;
+        align-content: center;
     }
 
 }
